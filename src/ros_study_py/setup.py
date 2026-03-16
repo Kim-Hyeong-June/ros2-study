@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'my_py_pkg'
+package_name = 'ros_study_py'
 
 setup(
     name=package_name,
@@ -14,7 +14,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='kimhyeongjune',
-    maintainer_email='kimhyeongjune@todo.todo',
+    maintainer_email='york0095@naver.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -22,17 +22,10 @@ setup(
             'pytest',
         ],
     },
-
     entry_points={
-    'console_scripts': [
-        'publisher_node = my_py_pkg.publisher_node:main',
-        'subscriber_node = my_py_pkg.subscriber_node:main',
-        'robot_pose_publisher = my_py_pkg.robot_pose_publisher:main',
-        'robot_pose_subscriber = my_py_pkg.robot_pose_subscriber:main',
-        'move_robot_server = my_py_pkg.move_robot_server:main',
-        'move_robot_client = my_py_pkg.move_robot_client:main',
-        'move_distance_server = my_py_pkg.move_distance_server:main',
-    ],
+        'console_scripts': [
+            'my_msg_test = ros_study_py.my_msg_test:main',
+            
+        ],
     },
-
 )
